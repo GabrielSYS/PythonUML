@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" modified="2023-06-26T01:31:39.939Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="1RoRlg2huoMH4nuUrRTQ" version="21.3.8" type="device">
+  <diagram name="Página-1" id="aAsv_IE-yHBZpTC47kBm">
+    <mxGraphModel dx="880" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-Fy38zbr3z6fwyK8bdID-1" value="Nome de quem vai tomar&lt;br&gt;data de inicio&lt;br&gt;quantidade de dias prescrita pelo medico&lt;br&gt;quantidade de vezes ao dia&lt;br&gt;dosagem&amp;nbsp;&lt;br&gt;nome do remedio&lt;br&gt;&lt;br&gt;-ao cadastrar, sugere todos os horarios possíveis&lt;br&gt;-usuário escolhe o melhor horario e a aplicação avis até quando deve ser tomado remedio&lt;br&gt;-a aplicação prepara uma planilha de horario&lt;br&gt;-usuário seleciona dia, opção de planilha de horarios&amp;nbsp;&lt;br&gt;-se atrasar a planilha reorganiza os horários" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="30" y="50" width="400" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="-Fy38zbr3z6fwyK8bdID-2" value="Cadastro_Paciente" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="360" width="270" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="-Fy38zbr3z6fwyK8bdID-3" value="-string get: (&quot;Nome do Paciente&quot;)&lt;br&gt;-date get: (&quot;data do inicio da medicação&quot;)&lt;br&gt;-date get: (&quot;data do fim da medicação&quot;)&lt;br&gt;-string get: (&quot;Nome da Medicação&quot;)&lt;br&gt;-int get: (&quot;Dosagem Prescrita pelo Medico&quot;)&lt;br&gt;-int get: (string &quot;Quantidade Vezes ao Dia&quot;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="-Fy38zbr3z6fwyK8bdID-2">
+          <mxGeometry y="26" width="270" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="-Fy38zbr3z6fwyK8bdID-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="-Fy38zbr3z6fwyK8bdID-2">
+          <mxGeometry y="146" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="-Fy38zbr3z6fwyK8bdID-5" value="+set NomePct: (string &quot;Nome do Paciente&quot;)&lt;br&gt;+set dataInicio: (date &quot;data do inicio da medicação&quot;)&lt;br&gt;+set dataFim: (date &quot;data do fim da medicação&quot;)&lt;br&gt;+set medicacao: (string &quot;Nome da Medicação&quot;)&lt;br&gt;+set dosagem: (int &quot;DosagemPrescrita pelo Medico&quot;)&lt;br&gt;+set vezesDia: (int &quot;Quantidade Vezes ao Dia&quot;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="-Fy38zbr3z6fwyK8bdID-2">
+          <mxGeometry y="154" width="270" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="-Fy38zbr3z6fwyK8bdID-6" value="Lista_Remedios_Horarios" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="380" width="290" height="208" as="geometry" />
+        </mxCell>
+        <mxCell id="-Fy38zbr3z6fwyK8bdID-7" value="-get class: Cadastro_Paciente[ ]&lt;br&gt;-" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="-Fy38zbr3z6fwyK8bdID-6">
+          <mxGeometry y="26" width="290" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="-Fy38zbr3z6fwyK8bdID-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="-Fy38zbr3z6fwyK8bdID-6">
+          <mxGeometry y="80" width="290" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="-Fy38zbr3z6fwyK8bdID-9" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="-Fy38zbr3z6fwyK8bdID-6">
+          <mxGeometry y="88" width="290" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="-Fy38zbr3z6fwyK8bdID-10" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;exitX=-0.019;exitY=0.11;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-Fy38zbr3z6fwyK8bdID-5" target="-Fy38zbr3z6fwyK8bdID-9">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="540" as="sourcePoint" />
+            <mxPoint x="410" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-Fy38zbr3z6fwyK8bdID-11" value="*,0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="340" y="495" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-Fy38zbr3z6fwyK8bdID-12" value="*,0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="430" y="498" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-Fy38zbr3z6fwyK8bdID-13" value="recebe" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="370" y="528" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-Fy38zbr3z6fwyK8bdID-14" value="Classname" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="650" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="-Fy38zbr3z6fwyK8bdID-15" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="-Fy38zbr3z6fwyK8bdID-14">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="-Fy38zbr3z6fwyK8bdID-16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="-Fy38zbr3z6fwyK8bdID-14">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="-Fy38zbr3z6fwyK8bdID-17" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="-Fy38zbr3z6fwyK8bdID-14">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
